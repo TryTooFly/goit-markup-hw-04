@@ -123,7 +123,8 @@ margin-left: auto;}
         overflow: hidden;}
 
 /* hero */
-.hero{ 
+.hero { 
+    background-color: var(--secondary-font-color);
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -131,12 +132,14 @@ padding-top: 200px;
 padding-bottom: 200px;
 max-width: 1600px;
 height: 600px;
-background-image:
-url(../images/hero.jpg);
+background-image: linear-gradient(to right, rgba(47, 48, 58, 40%), rgba(47, 48, 58, 40%)),
+url('../images/hero.jpg');
+
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 }
+
 .hero-title { color: var(--font-color);
     margin-top: 0;
     margin-bottom: 30px;
