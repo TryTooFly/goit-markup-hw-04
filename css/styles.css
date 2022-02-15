@@ -47,6 +47,22 @@ margin: 0;}
     margin-right: 30px;
 }
 .list-text-item{width: 270px;}
+.list-text-item::before{
+    display: block;
+    content:"";
+    
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--third-font-color);
+border-radius: 4px;
+margin-bottom: 30px;
+}
+.antenna::before{background-image: url(../images/antenna.svg);
+}
+.clock::before{background-image: url(../images/clock.svg);}
+.diagram::before{background-image: url(../images/diagram.svg);}
+.astronaut::before{background-image: url(../images/astronaut.svg);}
 
 .container {
     width: 1200px;
