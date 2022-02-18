@@ -283,6 +283,53 @@ a {
   list-style: none;
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: var(--font-color);
+}
+.icons-nav-team {
+  display: flex;
+  justify-content: center;
+}
+.list-icons-team {
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+.list-icons-team li:not(:last-child) {
+  margin-right: 10px;
+}
+.social-links-team {
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-right: 0px;
+  background-color: var(--font-color);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.icons-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.icons-team:hover,
+.icons-team:focus {
+  background-color: var(--accent);
+}
+.icon-team {
+  fill: rgba(175, 177, 184, 1);
+  padding: 12px 12px;
+}
+.icon-team:hover,
+.icon-team:focus {
+  fill: var(--font-color);
 }
 /* button */
 button {
@@ -357,9 +404,11 @@ button:focus {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
 }
-
 .svg-logo {
-  margin: 16px 32px;
+  fill: #afb1b8;
+}
+.svg-logo:hover {
+  fill: var(--accent);
 }
 /* footer */
 .nav-footer {
@@ -441,9 +490,12 @@ address {
   fill: var(--font-color);
 }
 .icons-footer {
-  display: block;
-  width: 20px;
-  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
 }
 .icons-nav-footer {
   display: flex;
@@ -495,6 +547,16 @@ address {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+.link-portfolio {
+  display: inline-block;
+}
+.link-portfolio:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .list-button {
   display: flex;
