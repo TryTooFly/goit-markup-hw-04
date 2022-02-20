@@ -49,6 +49,7 @@ img {
   margin-right: 30px;
 }
 .list-item {
+  background-color: var(--font-color);
   margin-bottom: 0;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -268,6 +269,7 @@ a {
 }
 
 .section-our-team h3 {
+  margin-top: 30px;
   margin-bottom: 10px;
 
   font-weight: 500;
@@ -276,12 +278,6 @@ a {
   text-align: center;
 }
 
-.team {
-  list-style: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: var(--font-color);
-}
 .icons-nav-team {
   display: flex;
   justify-content: center;
@@ -290,9 +286,10 @@ a {
   list-style: none;
   display: flex;
   padding-left: 0;
-
+  justify-content: center;
   margin-top: 16px;
   margin-bottom: 0;
+  margin-bottom: 30px;
 }
 .list-icons-team li:not(:last-child) {
   margin-right: 10px;
@@ -367,9 +364,15 @@ button:focus {
   margin-top: 94px;
 }
 .logo-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 170px;
   height: 92px;
   fill: #afb1b8;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
 }
 .list-logos {
   display: flex;
@@ -380,13 +383,8 @@ button:focus {
   margin-bottom: 98px;
   margin-top: 0;
 }
-.logo-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(175, 177, 184, 1);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 4px;
+.svg-logo-list:not(:last-child) {
+  margin-right: 30px;
 }
 .svg-logo {
   margin: 16px 32px;
@@ -394,7 +392,7 @@ button:focus {
 .logo-client:hover,
 .logo-client:focus {
   fill: var(--accent);
-  border: 1px solid rgba(33, 150, 243, 1);
+  border: 1px solid #2196f3;
 }
 /* footer */
 
@@ -419,8 +417,8 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer {
-  display: inline-flex;
+.footer-container {
+  display: flex;
   width: 1200px;
   justify-content: left;
   align-items: baseline;
@@ -445,6 +443,7 @@ address {
   font-style: normal;
 }
 .text-footer {
+  text-transform: uppercase;
   color: var(--font-color);
   font-weight: bold;
   font-size: 14px;
